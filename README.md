@@ -23,17 +23,17 @@ This project hosts a static website using AWS services including S3, CloudFront,
 - Uploaded website files
 - Verified website using S3 endpoint
 3. Configured CloudFront distribution
-  •	Created a CloudFront distribution in front of the S3-hosted static website
-	•	Selected the S3 bucket as the origin
-	•	Enabled HTTP-to-HTTPS redirection
-	•	Applied the CachingOptimized policy to improve content delivery performance
-	•	Verified website access through the CloudFront distribution URL
+- Created a CloudFront distribution in front of the S3-hosted static website
+- Selected the S3 bucket as the origin
+- Enabled HTTP-to-HTTPS redirection
+- Applied the CachingOptimized policy to improve content delivery performance
+- Verified website access through the CloudFront distribution URL
 4. Set up HTTPS with ACM
 5. Configured DNS with Route 53
 
 ## Live Demo
-after step 2: http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/
-after step 3: https://d1r53fmhaqxmmc.cloudfront.net/
+- after step 2: http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/
+- after step 3: https://d1r53fmhaqxmmc.cloudfront.net/
 
 ## Technologies Used
 - HTML
