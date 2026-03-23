@@ -29,11 +29,11 @@ User → DNS (Namecheap) → CloudFront (CDN + HTTPS + WAF) → S3 (private buck
 - Reduced latency and improved performance globally
 
 ## Challenges & Solutions
-Issue: AccessDenied when using S3 origin
-Root Cause: Missing proper permissions between CloudFront and S3
-Solution:
-- Implemented Origin Access Control (OAC)
-- Updated bucket policy to allow only CloudFront
+- Issue: AccessDenied when using S3 origin
+- Root Cause: Missing proper permissions between CloudFront and S3
+- Solution:
+  - Implemented Origin Access Control (OAC)
+  - Updated bucket policy to allow only CloudFront
 
 ## Deployment Steps (Simplified)
 1.	Built static website (HTML, CSS, JS)
