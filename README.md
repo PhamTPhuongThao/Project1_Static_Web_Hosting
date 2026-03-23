@@ -27,7 +27,7 @@ This project hosts a static website using AWS services including S3, CloudFront,
 6. Configured DNS with Route 53
 
 ## Live Demo
-http://your-bucket-name.s3-website-region.amazonaws.com
+http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/
 
 ## Technologies Used
 - HTML
