@@ -1,4 +1,4 @@
-### AWS Static Website Hosting
+## AWS Static Website Hosting
 
 ## Overview
 Designed and deployed a secure, scalable static website using AWS cloud-native services with CDN, HTTPS, and access control.
