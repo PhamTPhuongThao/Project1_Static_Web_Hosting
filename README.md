@@ -1,13 +1,10 @@
 # AWS Static Website Hosting
 
 ## Overview
-This project hosts a static website using AWS services including S3, CloudFront, and Route 53.
+This project hosts a static website using AWS services including S3, CloudFront, and NameCheap.
 
 ## Architecture
-- Amazon S3 for static website hosting
-- CloudFront for CDN
-- Route 53 for DNS
-- ACM for HTTPS
+User → DNS (Namecheap) → CloudFront (CDN + HTTPS + WAF) → S3 (private bucket via OAC)
 
 ## Steps
 1. Build Website Locally
@@ -46,20 +43,21 @@ This project hosts a static website using AWS services including S3, CloudFront,
 - Attached ACM SSL certificate for HTTPS
 - Updated DNS records in Namecheap to point domain to CloudFront
 - Verified secure access via custom domain
-  * Note
+  * Note:
   Due to DNS limitations, the root domain was redirected to the www subdomain, which is connected     to the CloudFront distribution.
+6. Configure WAF Protection + Set Up DNS Records
+- Security protections from WAF are included in the plan
 
 ## Live Demo
-- after step 2: disable after step 4 (http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/)
-- after step 3, 4: https://d1r53fmhaqxmmc.cloudfront.net/
-- after step 5: https://www.thaotppham-portfolio.com/
+https://www.thaotppham-portfolio.com/
 
 ## Technologies Used
 - HTML
 - CSS
 - AWS S3
 - AWS CloudFront
-- AWS Route 53
+- AWS Certificate Manager (ACM)
+- AWS WAF
 
 ## What I Learned
 - Buckets are private by default and require explicit public access
