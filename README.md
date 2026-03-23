@@ -32,12 +32,17 @@ This project hosts a static website using AWS services including S3, CloudFront,
   - S3 bucket origin: returned AccessDenied under the current configuration
   - S3 website endpoint: worked successfully with static website hosting enabled
   -> Conclusion: Used the S3 website endpoint for the initial working deployment, with the option to migrate later to a more secure S3 bucket origin + OAC architecture.
-4. Set up HTTPS with ACM
-5. Configured DNS with Route 53
+4. Set Up Origin Access Control
+- Configured Origin Access Control so CloudFront could securely access S3 content
+- Updated the CloudFront origin to use the S3 bucket instead of the website endpoint
+- Replaced public S3 read access with a restricted bucket policy for CloudFront only
+- Improved security by preventing direct public access to website objects
+5. Set up HTTPS with ACM
+6. Configured DNS with Route 53
 
 ## Live Demo
-- after step 2: http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/
-- after step 3: https://d1r53fmhaqxmmc.cloudfront.net/
+- after step 2: disable after step 4 (http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/)
+- after step 3, 4: https://d1r53fmhaqxmmc.cloudfront.net/
 
 ## Technologies Used
 - HTML
