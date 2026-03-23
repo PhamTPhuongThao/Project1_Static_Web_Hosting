@@ -46,6 +46,8 @@ This project hosts a static website using AWS services including S3, CloudFront,
 - Attached ACM SSL certificate for HTTPS
 - Updated DNS records in Namecheap to point domain to CloudFront
 - Verified secure access via custom domain
+  * Note
+  Due to DNS limitations, the root domain was redirected to the www subdomain, which is connected     to the CloudFront distribution.
 
 ## Live Demo
 - after step 2: disable after step 4 (http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/)
