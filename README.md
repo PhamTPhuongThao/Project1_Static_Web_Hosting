@@ -37,12 +37,20 @@ This project hosts a static website using AWS services including S3, CloudFront,
 - Updated the CloudFront origin to use the S3 bucket instead of the website endpoint
 - Replaced public S3 read access with a restricted bucket policy for CloudFront only
 - Improved security by preventing direct public access to website objects
-5. Set up HTTPS with ACM
-6. Configured DNS with Route 53
+5. Register Domain + Provision SSL Certificate
+- Registered domain using Namecheap
+- Requested SSL certificate using AWS Certificate Manager (ACM)
+- Validated domain ownership via DNS records
+- Configured CloudFront with custom domain and SSL certificate
+- Updated DNS records to point domain to CloudFront distribution
+- Attached ACM SSL certificate for HTTPS
+- Updated DNS records in Namecheap to point domain to CloudFront
+- Verified secure access via custom domain
 
 ## Live Demo
 - after step 2: disable after step 4 (http://thaotppham-portfolio-website-2026.s3-website-us-east-1.amazonaws.com/)
 - after step 3, 4: https://d1r53fmhaqxmmc.cloudfront.net/
+- after step 5: https://www.thaotppham-portfolio.com/
 
 ## Technologies Used
 - HTML
