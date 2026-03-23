@@ -28,6 +28,10 @@ This project hosts a static website using AWS services including S3, CloudFront,
 - Enabled HTTP-to-HTTPS redirection
 - Applied the CachingOptimized policy to improve content delivery performance
 - Verified website access through the CloudFront distribution URL
+* Tested two CloudFront origin models:
+  - S3 bucket origin: returned AccessDenied under the current configuration
+  - S3 website endpoint: worked successfully with static website hosting enabled
+  -> Conclusion: Used the S3 website endpoint for the initial working deployment, with the option to migrate later to a more secure S3 bucket origin + OAC architecture.
 4. Set up HTTPS with ACM
 5. Configured DNS with Route 53
 
