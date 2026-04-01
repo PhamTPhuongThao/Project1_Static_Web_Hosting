@@ -1,5 +1,8 @@
 ## AWS Static Website Hosting
 
+## Live Demo
+https://www.thaotppham-portfolio.com/
+
 ## Overview
 Designed and deployed a secure, scalable static website using AWS cloud-native services with CDN, HTTPS, and access control.
 
@@ -42,9 +45,6 @@ User → DNS (Namecheap) → CloudFront (CDN + HTTPS + WAF) → S3 (private buck
 4.	Implemented OAC and secured bucket
 5.	Configured ACM SSL certificate
 6.	Connected domain via Namecheap DNS
-
-## Live Demo
-https://www.thaotppham-portfolio.com/
 
 ## Skills Demonstrated
 - Cloud architecture design
